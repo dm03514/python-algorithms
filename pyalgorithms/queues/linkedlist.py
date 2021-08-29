@@ -8,6 +8,15 @@ class Node:
 
 
 class FIFOQueue(IQueue):
+    """
+    FIFOQueue provides a linked list implementation.
+
+    Operation Runtimes:
+    - enqueue: 0(1)
+    - dequeue: 0(1)
+    - peek: 0(1)
+    - size: 0(1)
+    """
     def __init__(self):
         self._head = None
         self._tail = None
