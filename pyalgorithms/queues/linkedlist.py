@@ -17,10 +17,10 @@ class FIFOQueue(IQueue):
         if self._size == 0:
             # if the queue is empty, initialize both
             # head and tail to the item
-            self._head = Node(
+            node = Node(
                 value=item
             )
-            self._tail = self._head
+            self._tail = self._head = node
         else:
             # append the item at the end of the queue
             # i.e. put the item in line (FIFO)
@@ -44,7 +44,7 @@ class FIFOQueue(IQueue):
         self._size -= 1
 
         if self._size == 0:
-            # set the tail
+            # set the tail to empty
             self._tail = None
 
         # return the first value
