@@ -3,7 +3,7 @@ import unittest
 from pyalgorithms.queues.linkedlist import FIFOQueue
 
 
-class LinkedListTestCase(unittest.TestCase):
+class FIFOQueueLinkedListTestCase(unittest.TestCase):
 
     def test_enqueue_single_item(self):
         q = FIFOQueue()
